@@ -1,23 +1,7 @@
-# Disclaimer
+# Ensinando web apps
 
-This is a template for nuxt vuetify
+Repositório para ensinar web apps para estudantes (free, open, public)
 
-# Things to improve in the template
+# Objetivo
 
-- Route system
-- Graphql
-- Firebase
-- i18n decoupled
-- l10n decoupled
-- Rails
-- Python
-- Login system decoupled
-- Storybook maybe
-- Cypress or better
-- Nuxt
-- Typescript and Javascript rocking
-
-# Debug nuxt
-
-- https://www.afterdigital.co.uk/insights-and-updates/debug-nuxt-with-vs-code
-- 
+- Ensinar programação na web para iniciantes
