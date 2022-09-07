@@ -1,13 +1,9 @@
 <template lang='pug'>
 v-toolbar(fixed app :clipped-left='clipped')
   v-toolbar-side-icon(@click='toggleNavLeft()')
-  v-btn(color='primary')
-    | Dashboard 1
-  v-btn(color='primary')
-    | Dashboard 2
-  v-btn(color='primary')
-    | Dashboard 3
+
   v-spacer
+
   v-btn(icon @click.stop='toggleNavRight()')
     v-icon menu
 </template>
@@ -22,10 +18,6 @@ export default {
       drawer: false,
       fixed: true,
       title: 'App',
-      items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-      ],
       miniVariant: false,
       right: true,
       rightDrawer: false
