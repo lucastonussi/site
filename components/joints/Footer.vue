@@ -1,5 +1,5 @@
 <template lang="pug">
-v-footer(:fixed='fixed' app)
+v-footer.pa-5(:fixed='fixed' app)
   span &copy; {{ new Date().getFullYear() }}
   v-switch(v-model="contrast")
     v-icon(v-if="contrast") moon_waning_crescent
@@ -8,8 +8,12 @@ v-footer(:fixed='fixed' app)
 
 <script>
 import { mapMutations, mapState } from 'vuex'
+import LanguageSwitch from '@/components/primitives/LanguageSwitch'
 
 export default {
+  components: {
+    LanguageSwitch
+  },
   data() {
     return {
       fixed: true,

@@ -22,7 +22,7 @@ export default {
         { icon: 'colorizeshield', title: 'Guilherme', to: '/guilherme' },
         { icon: 'baby_changing_station', title: 'Babe Care Spot', to: '/babycarespot' },
         { icon: 'api', title: 'Api Docs', to: '/apidocs' },
-        { icon: 'searchauto_stories', title: 'Discovery', to: '/discover' }
+        { icon: 'searchauto_stories', title: this.$t('generals.toolbar.left.discovery'), to: '/discover' }
       ]
     }
   },

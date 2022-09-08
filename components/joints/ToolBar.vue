@@ -2,6 +2,7 @@
 v-toolbar(fixed app :clipped-left='clipped')
   v-toolbar-side-icon(@click='toggleNavLeft()')
 
+  p.ml-3 {{ $t('greeting', { name: account.name }) }}
   v-spacer
 
   v-btn(icon @click.stop='toggleNavRight()')
@@ -25,7 +26,8 @@ export default {
   },
   computed: {
     ...mapState({
-      uiState: 'ui'
+      uiState: 'ui',
+      account: 'account'
     })
   },
   methods: {
