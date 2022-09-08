@@ -1,9 +1,10 @@
 <template lang="pug">
-v-footer.pa-5(:fixed='fixed' app)
-  span &copy; {{ new Date().getFullYear() }}
-  v-switch(v-model="contrast")
-    v-icon(v-if="contrast") moon_waning_crescent
-    v-icon(v-else) weather_sunny
+v-footer(:fixed='fixed' app height='200px')
+  v-container
+    v-row
+      span &copy; {{ new Date().getFullYear() }}
+    v-row
+      v-switch(success v-model="contrast" @click="toggleContrast" append-icon='nightlight' prepend-icon='lightbulb')
 </template>
 
 <script>
