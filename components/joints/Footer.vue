@@ -32,10 +32,7 @@ export default {
       contrast: 'ui/contrast',
       locales: 'locales',
       account: 'account'
-    }),
-    availableLocales() {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    }
+    })
   },
   watch: {
     'account.language': {
@@ -47,9 +44,6 @@ export default {
     }
   },
   methods: {
-    switchLocalePath(code) {
-      this.$i18n.setLocale(code)
-    },
     ...mapMutations({
       toggleContrast: 'ui/toggleContrast',
       setAccountLanguage: 'account/setAccountLanguage'
