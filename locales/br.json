@@ -1,5 +1,5 @@
 {
-  "greeting": "hello, {name}",
+  "greeting": "olá, {name}",
   "generals": {
     "toolbar": {
       "left": {

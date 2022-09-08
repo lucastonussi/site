@@ -1,9 +1,9 @@
 export const state = () => ({
-  lang: 'pt_br'
+  languageOptions: [
+    { text: 'br', value: 'br' },
+    { text: 'en', value: 'en' }
+  ]
 })
 
 export const mutations = {
-  switchLocalePath(state, lang) {
-    state.lang = lang
-  }
 }

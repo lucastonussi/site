@@ -1,37 +1,52 @@
-<template lang="pug">
+<template lang='pug'>
 v-footer(:fixed='fixed' app height='200px')
-  v-container
+  v-container(fluid)
     v-row
-      span &copy; {{ new Date().getFullYear() }}
+      v-col
+        span &copy; {{ new Date().getFullYear() }}
     v-row
-      v-switch(success v-model="contrast" @click="toggleContrast" append-icon='nightlight' prepend-icon='lightbulb')
+      v-col
+        v-switch(v-model='contrast' @click='toggleContrast' append-icon='nightlight' prepend-icon='lightbulb')
+    v-row
+      v-col.d-flex(sm='6' cols='12')
+        v-select(
+          v-model='account.language'
+          :items='locales.languageOptions'
+          item-text='text'
+          item-value='value'
+          prepend-icon='translate'
+        )
 </template>
 
 <script>
 import { mapMutations, mapState } from 'vuex'
-import LanguageSwitch from '@/components/primitives/LanguageSwitch'
 
 export default {
-  components: {
-    LanguageSwitch
-  },
   data() {
     return {
-      fixed: true,
-      contrast: true
+      fixed: true
     }
   },
   computed: {
     ...mapState({
-      uiState: 'ui'
-    }),
-    contrast() {
-      return this.uiState.contrast
+      contrast: 'ui/contrast',
+      locales: 'locales',
+      account: 'account'
+    })
+  },
+  watch: {
+    'account.language': {
+      immediate: true,
+      handler() {
+        this.setAccountLanguage(this.account.language)
+        this.$i18n.language = this.account.language
+      }
     }
   },
   methods: {
     ...mapMutations({
-      toggleContrast: 'ui/toggleContrast'
+      toggleContrast: 'ui/toggleContrast',
+      setAccountLanguage: 'account/setAccountLanguage'
     })
   }
 }

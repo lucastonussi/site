@@ -1,11 +1,11 @@
 import en from '../locales/en.json'
-import ptbr from '../locales/ptbr.json'
+import br from '../locales/br.json'
 
 export default {
-  locale: 'en',
-  defaultLocale: 'ptbr',
+  locale: ['en', 'br'],
+  defaultLocale: 'br',
   vueI18n: {
-    fallbackLocale: 'ptbr',
-    messages: { en, ptbr }
+    fallbackLocale: 'br',
+    messages: { en, br }
   }
 }
