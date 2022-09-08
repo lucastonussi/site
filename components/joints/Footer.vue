@@ -8,7 +8,7 @@ v-footer(:fixed='fixed' app height='200px')
       v-col
         v-switch(v-model='contrast' @click='toggleContrast' append-icon='nightlight' prepend-icon='lightbulb')
     v-row
-      v-col.d-flex(sm='6' cols='12')
+      v-col.d-flex(md='4')
         v-select(
           v-model='account.language'
           :items='locales.languageOptions'
@@ -32,18 +32,24 @@ export default {
       contrast: 'ui/contrast',
       locales: 'locales',
       account: 'account'
-    })
+    }),
+    availableLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
   },
   watch: {
     'account.language': {
       immediate: true,
       handler() {
         this.setAccountLanguage(this.account.language)
-        this.$i18n.language = this.account.language
+        this.$i18n.setLocale(this.account.language)
       }
     }
   },
   methods: {
+    switchLocalePath(code) {
+      this.$i18n.setLocale(code)
+    },
     ...mapMutations({
       toggleContrast: 'ui/toggleContrast',
       setAccountLanguage: 'account/setAccountLanguage'
