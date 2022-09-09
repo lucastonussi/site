@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "@nuxtjs/i18n": "^7.3.0",
     "animate.css": "^4.1.1",
+    "apollo-boost": "^0.4.9",
     "chart.js": "^3.8.2",
     "chartjs": "^0.3.24",
     "crypt.io": "^1.0.8",

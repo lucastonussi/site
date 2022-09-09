@@ -5,7 +5,7 @@ v-navigation-drawer(:clipped='clipped' v-model='drawer' fixed app)
       v-list-tile-action
         v-icon(v-html='item.icon')
       v-list-tile-content
-        v-list-tile-title(v-text='item.title')
+        v-list-tile-title(v-text='$t(item.title)')
 </template>
 
 <script>
@@ -16,8 +16,13 @@ export default {
     return {
       clipped: false,
       items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+        { icon: 'apps', title: 'generals.toolbar.left.welcome', to: '/' },
+        { icon: 'bubble_chart', title: 'generals.toolbar.left.inspire', to: '/inspire' },
+        { icon: 'favoriteairplanemode_active', title: 'generals.toolbar.left.marina', to: '/marina' },
+        { icon: 'colorizeshield', title: 'generals.toolbar.left.guilherme', to: '/guilherme' },
+        { icon: 'baby_changing_station', title: 'generals.toolbar.left.babycarespot', to: '/babycarespot' },
+        { icon: 'api', title: 'generals.toolbar.left.apidocs', to: '/apidocs' },
+        { icon: 'searchauto_stories', title: 'generals.toolbar.left.discovery', to: '/discover' }
       ]
     }
   },

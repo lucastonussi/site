@@ -1,7 +1,7 @@
 <template lang='pug'>
 dash-group-layout
   template(slot='top')
-    tool-bar
+    tool-bar-component
   template(slot='left')
     navigation-drawer-left
   template(slot='middle')
@@ -9,23 +9,23 @@ dash-group-layout
   template(slot='right')
     navigation-drawer-right
   template(slot='bottom')
-    footer
+    bottom-footer-component
 </template>
 
 <script>
 import DashGroupLayout from '@/components/groups/DashGroupLayout'
 import NavigationDrawerLeft from '@/components/joints/navigations_drawer/Left'
 import NavigationDrawerRight from '@/components/joints/navigations_drawer/Right'
-import ToolBar from '@/components/joints/ToolBar'
-import Footer from '@/components/joints/Footer'
+import ToolBarComponent from '@/components/joints/ToolBar'
+import BottomFooterComponent from '@/components/joints/Footer'
 import MainContent from '@/components/transitions/MainContent'
 
 export default {
   components: {
     NavigationDrawerLeft,
     NavigationDrawerRight,
-    ToolBar,
-    Footer,
+    ToolBarComponent,
+    BottomFooterComponent,
     MainContent,
     DashGroupLayout
   }
