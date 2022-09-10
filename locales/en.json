@@ -1,0 +1,10 @@
+{
+  "greeting": "hello, {name}",
+  "generals": {
+    "toolbar": {
+      "left": {
+        "discovery": "Discovery"
+      }
+    }
+  }
+}
