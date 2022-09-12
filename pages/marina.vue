@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class='grid-container1'>
+    <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class='grid-container2'>
+    <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -60,7 +60,7 @@
       </div>
     </div>
   
-    <div class='grid-container3'>
+    <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -97,7 +97,6 @@
   export default {
     data() {
       return {
-        // pesquisar o que é dicionário em javascript
         lola: {
           titulo: 'Dicas de como cuidar do seu cachorro',
           frase: 'Cachorro independente e sem ansiedade de separação',
@@ -123,37 +122,10 @@
   }
   </script>
   
-  <!-- pesquisar o que é classe em css -->
-  
   <style>
-  .grid-container1 {
-    /* pesquisa o que é display: grid */
+  .grid-container {
     display: grid;
-    /* pesquisa o que é grid-template-columns */
     grid-template-columns: auto auto auto auto;
-    /* pesquisa o que é background-color */
     text-align: center;
   }
   </style>
-
-  <style>
-    .grid-container2 {
-      /* pesquisa o que é display: grid */
-      display: grid;
-      /* pesquisa o que é grid-template-columns */
-      grid-template-columns: auto auto auto auto;
-      /* pesquisa o que é background-color */
-      text-align: center;
-    }
-    </style>
-
-    <style>
-      .grid-container3 {
-        /* pesquisa o que é display: grid */
-        display: grid;
-        /* pesquisa o que é grid-template-columns */
-        grid-template-columns: auto auto auto auto;
-        /* pesquisa o que é background-color */
-        text-align: center;
-      }
-      </style>
