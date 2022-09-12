@@ -132,9 +132,7 @@
     /* pesquisa o que é grid-template-columns */
     grid-template-columns: auto auto auto auto;
     /* pesquisa o que é background-color */
-    column-gap: 10px;
     text-align: center;
-    background-color: #c05905;
   }
   </style>
 
@@ -145,9 +143,7 @@
       /* pesquisa o que é grid-template-columns */
       grid-template-columns: auto auto auto auto;
       /* pesquisa o que é background-color */
-      column-gap: 10px;
       text-align: center;
-      background-color: rgb(223, 111, 19);
     }
     </style>
 
@@ -158,8 +154,6 @@
         /* pesquisa o que é grid-template-columns */
         grid-template-columns: auto auto auto auto;
         /* pesquisa o que é background-color */
-        column-gap: 10px;
         text-align: center;
-        background-color: rgb(245, 145, 78);
       }
       </style>
