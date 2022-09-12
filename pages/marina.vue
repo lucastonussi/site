@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class='grid-container'>
+    <div class='grid-container1'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class='grid-container'>
+    <div class='grid-container2'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -60,7 +60,7 @@
       </div>
     </div>
   
-    <div class='grid-container'>
+    <div class='grid-container3'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
@@ -126,12 +126,40 @@
   <!-- pesquisar o que é classe em css -->
   
   <style>
-  .grid-container {
+  .grid-container1 {
     /* pesquisa o que é display: grid */
     display: grid;
     /* pesquisa o que é grid-template-columns */
     grid-template-columns: auto auto auto auto;
     /* pesquisa o que é background-color */
-    background-color: rgb(236, 116, 3);
+    column-gap: 10px;
+    text-align: center;
+    background-color: #c05905;
   }
   </style>
+
+  <style>
+    .grid-container2 {
+      /* pesquisa o que é display: grid */
+      display: grid;
+      /* pesquisa o que é grid-template-columns */
+      grid-template-columns: auto auto auto auto;
+      /* pesquisa o que é background-color */
+      column-gap: 10px;
+      text-align: center;
+      background-color: rgb(223, 111, 19);
+    }
+    </style>
+
+    <style>
+      .grid-container3 {
+        /* pesquisa o que é display: grid */
+        display: grid;
+        /* pesquisa o que é grid-template-columns */
+        grid-template-columns: auto auto auto auto;
+        /* pesquisa o que é background-color */
+        column-gap: 10px;
+        text-align: center;
+        background-color: rgb(245, 145, 78);
+      }
+      </style>
