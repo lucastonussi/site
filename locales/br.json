@@ -1,10 +1,7 @@
 {
   "greeting": "oi, {name}",
-  "generals": { 
-    "toolbar": {
-      "left": {
+  "generals": "gerais",
+    "toolbar": "barra de ferramenta",
+      "left": "esquerda",
         "discovery": "Descoberta"
-      }
-    }
-  }
 }
