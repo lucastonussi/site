@@ -1,9 +1,15 @@
 {
-  "greeting": "hello, {name}",
+  "greeting": "Hello, {name}",
   "generals": {
     "toolbar": {
       "left": {
-        "discovery": "Discovery"
+        "discovery": "Descoberta",
+        "marina": "Marina",
+        "welcome": "Welcome",
+        "inspire": "Inspire",
+        "guilherme": "Guilherme",
+        "babycarespot": "Baby care spot",
+        "apidocs": "Documents API"
       }
     }
   }
