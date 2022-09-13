@@ -1,12 +1,19 @@
 {
   "greeting": "oi, {name}",
   "generals": {
-    "generals": "em geral",
     "toolbar": {
-      "toolbar": "barra de ferramenta",
       "left": {
-        "left": "esquerda",
         "discovery": "Descoberta"
+      }
+    }
+  }
+}
+{
+  "greeting": "oi, {name}",
+  "generals": {
+    "toolbar": {
+      "left": {
+        "marina": "Marina"
       }
     }
   }
