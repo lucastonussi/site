@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <input type="range" min="1" max="500" value="100" class="slider" id="myRange">
+      <input type="range" min="1" max="500" value="100" class="slider">
     </div>
     
     <div class='grid-container'>
@@ -9,28 +9,28 @@
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
         <p>{{ lola.frase }}</p>
-        <p>{{ lola.name}}</p>
+        <p>{{ lola.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/501"/>
         <h3>{{ miuxa.titulo }}</h3>
         <p>{{ miuxa.frase }}</p>
-        <p>{{ miuxa.name}}</p>
+        <p>{{ miuxa.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/502"/>
         <h3>{{ thomas.titulo }}</h3>
         <p>{{ thomas.frase }}</p>
-        <p>{{ thomas.name}}</p>
+        <p>{{ thomas.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/503"/>
         <h3>{{ tango.titulo }}</h3>
         <p>{{ tango.frase }}</p>
-        <p>{{tango.name}}</p>
+        <p>{{ tango.name }}</p>
       </div>
     </div>
     
@@ -39,28 +39,28 @@
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
         <p>{{ lola.frase }}</p>
-        <p>{{ lola.name}}</p>
+        <p>{{ lola.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/501"/>
         <h3>{{ miuxa.titulo }}</h3>
         <p>{{ miuxa.frase }}</p>
-        <p>{{ miuxa.name}}</p>
+        <p>{{ miuxa.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/502"/>
         <h3>{{ thomas.titulo }}</h3>
         <p>{{ thomas.frase }}</p>
-        <p>{{ thomas.name}}</p>
+        <p>{{ thomas.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/503"/>
         <h3>{{ tango.titulo }}</h3>
         <p>{{ tango.frase }}</p>
-        <p>{{tango.name}}</p>
+        <p>{{ tango.name }}</p>
       </div>
     </div>
   
@@ -69,28 +69,28 @@
         <img width='300px' height='200px' src="https://placedog.net/169"/>
         <h3>{{ lola.titulo }}</h3>
         <p>{{ lola.frase }}</p>
-        <p>{{ lola.name}}</p>
+        <p>{{ lola.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/501"/>
         <h3>{{ miuxa.titulo }}</h3>
         <p>{{ miuxa.frase }}</p>
-        <p>{{ miuxa.name}}</p>
+        <p>{{ miuxa.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/502"/>
         <h3>{{ thomas.titulo }}</h3>
         <p>{{ thomas.frase }}</p>
-        <p>{{ thomas.name}}</p>
+        <p>{{ thomas.name }}</p>
       </div>
     
       <div>
         <img width='300px' height='200px' src="https://placedog.net/503"/>
         <h3>{{ tango.titulo }}</h3>
         <p>{{ tango.frase }}</p>
-        <p>{{tango.name}}</p>
+        <p>{{ tango.name }}</p>
       </div>
     </div>
   </div>
