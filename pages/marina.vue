@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+
     <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
@@ -88,7 +92,6 @@
         <p>{{ tango.frase }}</p>
         <p>{{tango.name}}</p>
       </div>
-    </div>
     </div>
   </div>
 </template>
@@ -127,5 +130,13 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     text-align: center;
+  }
+
+  .slider{
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
   }
   </style>
