@@ -3,7 +3,7 @@
     <div>
       <input type="range" min="1" max="500" value="100" class="slider" id="myRange">
     </div>
-
+    
     <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
@@ -131,7 +131,7 @@
     grid-template-columns: auto auto auto auto;
     text-align: center;
   }
-
+  
   .slider{
     width: 100%;
     height: 25px;
