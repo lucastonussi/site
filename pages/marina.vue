@@ -29,7 +29,7 @@
         <p>{{tango.name}}</p>
       </div>
     </div>
-
+    
     <div class='grid-container'>
       <div>
         <img width='300px' height='200px' src="https://placedog.net/169"/>
