@@ -132,7 +132,7 @@
     text-align: center;
   }
   
-  .slider{
+  .slider {
     width: 100%;
     height: 25px;
     background: #d3d3d3;
