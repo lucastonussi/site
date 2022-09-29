@@ -40,7 +40,7 @@
     </div>
 
     <div class='figure-card' :style='buildBorderColor'>
-      <img :height='figureHeightSlider' alt='tango.titulo' src="https://placedog.net/169"/>
+      <img :height='figureHeightSlider' alt='tango.titulo' src="https://placedog.net/503"/>
       <h1 style='font-weight: bold;'>{{ tango.name }}</h1>
       <h3>{{ tango.titulo }}</h3>
       <p>{{ tango.frase }}</p>
