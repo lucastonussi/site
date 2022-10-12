@@ -1,5 +1,15 @@
 <template>
 <div>
+  <div class='login'>
+    <form>
+      <label>Login:</label>
+      <input type="text" name="login">
+      <label>Senha:</label>
+      <input type="password" name="senha">
+     </form>
+
+  </div>
+
   <div class='grid-container'>
     <div class='grid-container'>
       <label>Tamanho Figuras</label>
@@ -19,7 +29,7 @@
     <div class='grid-container'>
       <div class="party">
         <label for="party">Digite a data e a hora:</label>
-        <input id="party" type="datetime-local" name="party" class="partydate">
+        <input id="party" type="datetime-local" name="party" class="party-date">
       </div>
     </div>
 
@@ -119,12 +129,12 @@ export default {
   padding: 20px;
 }
 
-.partydate {
+.party-date {
   width: 150px;
   text-align: center;
 }
 
-.party{
+.party {
   width: 320px;
 }
 </style>
