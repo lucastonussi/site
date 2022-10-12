@@ -1,7 +1,6 @@
 <template>
 <div>
   <div class='grid-container'>
-    <!-- <span>{{ tamanhoFiguras }}</span> -->
     <div class='grid-container'>
       <label>Tamanho Figuras</label>
       <input type="range" min="30" max="100" v-model="figureHeightSlider" class="slider">
@@ -14,6 +13,15 @@
       <input type="range" min="0" max="225" v-model="figureBorderColorB" class="slider">
     </div>
   </div>
+
+  <div class='space-between'></div>
+
+    <div class='grid-container'>
+      <div class="party">
+        <label for="party">Digite a data e a hora:</label>
+        <input id="party" type="datetime-local" name="party" class="partydate">
+      </div>
+    </div>
 
   <div class='space-between'></div>
 
@@ -103,11 +111,20 @@ export default {
 }
 
 .space-between {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .figure-card {
   width: 200px;
   padding: 20px;
+}
+
+.partydate {
+  width: 150px;
+  text-align: center;
+}
+
+.party{
+  width: 320px;
 }
 </style>
