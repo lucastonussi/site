@@ -3,6 +3,10 @@
     "editor.tabSize": 2,
     "editor.wordWrapColumn": 120,
     "workbench.editor.enablePreview": false,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "i18n-ally.localesPaths": [
+        "locales",
+        "store/locales"
+    ]
 }
 

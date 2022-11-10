@@ -22,7 +22,8 @@ export default {
         { icon: 'colorizeshield', title: 'generals.toolbar.left.guilherme', to: '/guilherme' },
         { icon: 'baby_changing_station', title: 'generals.toolbar.left.babycarespot', to: '/babycarespot' },
         { icon: 'api', title: 'generals.toolbar.left.apidocs', to: '/apidocs' },
-        { icon: 'searchauto_stories', title: 'generals.toolbar.left.discovery', to: '/discover' }
+        { icon: 'searchauto_stories', title: 'generals.toolbar.left.discovery', to: '/discover' },
+        { icon: 'auto_stories', title: 'generals.toolbar.left.parallelreading', to: '/parallelreading' }
       ]
     }
   },
