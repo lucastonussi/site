@@ -1,32 +1,17 @@
 <template>
   <div>
     <div class='grid-container'>
-      <div class='figure-card' :style='buildBorderColor'>
-        <img :height='figureHeightSlider' alt='lola.titulo' src="https://placedog.net/169"/>
-        <h1 style='font-weight: bold;'>{{ lola.name }}</h1>
-        <h3>{{ lola.titulo }}</h3>
-        <p>{{ lola.frase }}</p>
-      </div>
-  
-      <div class='figure-card' :style='buildBorderColor'>
-        <img :height='figureHeightSlider' alt='miuxa.titulo' src="https://placedog.net/501"/>
-        <h1 style='font-weight: bold;'>{{ miuxa.name }}</h1>
-        <h3>{{ miuxa.titulo }}</h3>
-        <p>{{ miuxa.frase }}</p>
-      </div>
-  
-      <div class='figure-card' :style='buildBorderColor'>
-        <img :height='figureHeightSlider' alt='thomas.titulo' src="https://placedog.net/502"/>
-        <h1 style='font-weight: bold;'>{{ thomas.name }}</h1>
-        <h3>{{ thomas.titulo }}</h3>
-        <p>{{ thomas.frase }}</p>
-      </div>
-  
-      <div class='figure-card' :style='buildBorderColor'>
-        <img :height='figureHeightSlider' alt='tango.titulo' src="https://placedog.net/503"/>
-        <h1 style='font-weight: bold;'>{{ tango.name }}</h1>
-        <h3>{{ tango.titulo }}</h3>
-        <p>{{ tango.frase }}</p>
+      <div v-for="fii in fiis">
+        <div class='figure-card fii-box'>
+          <h1>{{ fii.name }}</h1>
+          <div style="padding-bottom: 25px; height: 50px;">
+            <h3>{{ fii.titulo }}</h3>
+          </div>
+          <div style="margin-top: 20px;">
+            <span style="margin-right: 25%;">{{ fii.dy }}</span>
+            <span>{{ fii.p_vp }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -34,55 +19,76 @@
   
   <script>
   export default {
-    computed: {
-      buildBorderColor() {
-        return `border: 1px dashed rgb(${this.figureBorderColorR}, ${this.figureBorderColorG}, ${this.figureBorderColorB})`
-      }
-    },
     data() {
       return {
-        figureHeightSlider: 100,
-        figureBorderColorR: 50,
-        figureBorderColorG: 50,
-        figureBorderColorB: 50,
-        lola: {
-          titulo: 'Dicas de como cuidar do seu cachorro',
-          frase: 'Cachorro independente e sem ansiedade de separação',
-          name: 'Lola'
-        },
-        miuxa: {
-          titulo: 'Dicas de como cuidar do seu cachorro',
-          frase: 'Cachorro independente e sem ansiedade de separação',
-          name: 'Miuxa'
-        },
-        thomas: {
-          titulo: 'Dicas de como cuidar do seu cachorro',
-          frase: 'Cachorro independente e sem ansiedade de separação',
-          name: 'Thomas'
-        },
-        tango: {
-          titulo: 'Dicas de como cuidar do seu cachorro',
-          frase: 'Cachorro independente e sem ansiedade de separação',
-          name: 'Tango'
-        }
+        fiis: [
+          {
+            titulo: 'Fundo Imobiliário CSHG LOGÍSTICA',
+            dy: 'DY 0,68%',
+            p_vp: 'P/VP 1,04',
+            name: 'HGLG11'
+          },
+          {
+            titulo: 'Fundo Imobiliário XP MALLS',
+            dy: 'DY 0,91%',
+            p_vp: 'P/VP 0,95',
+            name: 'XPML11'
+          },
+          {
+            titulo: 'Fundo Imobiliário Iridium Recebíveis Imobiliários',
+            dy: 'DY 0,99%',
+            p_vp: 'P/VP 0,99',
+            name: 'IRDM11'
+          },
+          {
+            titulo: 'Fundo Imobiliário Alianza Trust Renda Imobiliária',
+            dy: 'DY 0,69%',
+            p_vp: 'P/VP 1,04',
+            name: 'ALZR11'
+          },
+          {
+            titulo: 'Fundo Imobiliário Kinea Renda Imobiliária',
+            dy: 'DY 0,65%',
+            p_vp: 'P/VP 0,85',
+            name: 'KNRI11'
+          },
+          {
+            titulo: 'Fundo Imobiliário CSHG Real Estate',
+            dy: 'DY 0,69%',
+            p_vp: 'P/VP 0,69',
+            name: 'HGRE11'
+          },
+          {
+            titulo: 'Fundo Imobiliário Kinea Rendimentos Imobiliários',
+            dy: 'DY 1,21%',
+            p_vp: 'P/VP 0,98',
+            name: 'KNCR11'
+          },
+          {
+            titulo: 'Fundo Imobiliário BTG Pactual Fundo de Fundos',
+            dy: 'DY 0,89%',
+            p_vp: 'P/VP 0,83',
+            name: 'BCFF11'
+          }
+        ]
       }
     }
   }
   </script>
   
-  <style>
+  <style scoped>
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 50px;
+    justify-content: space-evenly;
+    align-content: center;
     text-align: center;
   }
-  
-  .slider {
-    width: 100px;
-    height: 25px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
+
+  .fii-box {
+    border: 1px solid black; height: 175px; border-radius: 12px;
   }
   
   .space-between {
@@ -90,17 +96,8 @@
   }
   
   .figure-card {
-    width: 200px;
+    width: 300px;
     padding: 20px;
-  }
-  
-  .party-date {
-    width: 150px;
-    text-align: center;
-  }
-  
-  .party {
-    width: 320px;
   }
   </style>
   
