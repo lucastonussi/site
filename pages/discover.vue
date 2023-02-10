@@ -16,6 +16,7 @@ export default {
         { icon: 'apps', title: 'Welcome', to: '/' },
         { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
         { icon: 'favoriteairplanemode_active', title: 'Marina', to: '/marina' },
+        { icon: 'home_work', title: 'Fundos', to: '/fundos' },
         { icon: 'colorizeshield', title: 'Guilherme', to: '/guilherme' },
         { icon: 'baby_changing_station', title: 'Babe Care Spot', to: '/babycarespot' },
         { icon: 'api', title: 'Api Docs', to: '/apidocs' }
