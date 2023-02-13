@@ -1,23 +1,11 @@
-<template>
+<template id="avaliar">
   <div>
-    <button @click="enviar">Enviar</button>
-    <span v-show="enviou">Enviado!</span>
+    <img :height='figureHeightSlider' alt='pessimo' src="☹️"/>
   </div>
 </template>
 
-
 <script>
-export default {
-  name: 'avaliacao',
-  data () {
-    return {
-      enviou: false
-    }
-  },
-  methods: {
-    enviar() {
-      this.enviou = !this.enviou
-    }
-  }
-}
+Vue.component('avaliacao', {
+  template: "avaliar"
+})
 </script>
