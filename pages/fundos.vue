@@ -14,11 +14,17 @@
       </div>
     </div>
   </div>
+  <rating></rating>
 </div>
 </template>
   
 <script>
+import Rating from '@/components/utilities/Rating'
+
 export default {
+  components: {
+    Rating
+  },
   data() {
     return {
       fiis: [
@@ -88,7 +94,7 @@ export default {
 }
 
 .fii-box {
-  border: 1px solid black; height: 175px; border-radius: 12px;
+  border: 1px solid black; height: 220px; border-radius: 12px;
 }
 
 .space-between {
