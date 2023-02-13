@@ -5,7 +5,11 @@
       "left": {
         "discovery": "Descoberta",
         "marina": "Marina",
+<<<<<<< HEAD
         "componentereutilizavel": "Componente Reutilizavel",
+=======
+        "fundos": "Fundos",
+>>>>>>> 5b528f4ccc9ec81f4f56db19588b36cc8b4d7d06
         "welcome": "Bem-vindo",
         "inspire": "Inspiração",
         "guilherme": "Guilherme",

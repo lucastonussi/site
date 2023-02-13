@@ -19,7 +19,11 @@ export default {
         { icon: 'apps', title: 'generals.toolbar.left.welcome', to: '/' },
         { icon: 'bubble_chart', title: 'generals.toolbar.left.inspire', to: '/inspire' },
         { icon: 'favoriteairplanemode_active', title: 'generals.toolbar.left.marina', to: '/marina' },
+<<<<<<< HEAD
         { icon: 'favoriteairplanemode_active', title: 'generals.toolbar.left.componentereutilizavel', to: '/componentereutilizavel' },
+=======
+        { icon: 'home_work', title: 'generals.toolbar.left.fundos', to: '/fundos' },
+>>>>>>> 5b528f4ccc9ec81f4f56db19588b36cc8b4d7d06
         { icon: 'colorizeshield', title: 'generals.toolbar.left.guilherme', to: '/guilherme' },
         { icon: 'baby_changing_station', title: 'generals.toolbar.left.babycarespot', to: '/babycarespot' },
         { icon: 'api', title: 'generals.toolbar.left.apidocs', to: '/apidocs' },
