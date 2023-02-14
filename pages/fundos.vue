@@ -15,8 +15,8 @@
       </div>
     </div>
   </div>
-  </template>
-  
+</template>
+
   <script>
   export default {
     data() {
@@ -75,29 +75,28 @@
     }
   }
   </script>
-  
-  <style scoped>
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 10px;
-    row-gap: 50px;
-    justify-content: space-evenly;
-    align-content: center;
-    text-align: center;
-  }
 
-  .fii-box {
-    border: 1px solid black; height: 175px; border-radius: 12px;
-  }
-  
-  .space-between {
-    margin-top: 3em;
-  }
-  
-  .figure-card {
-    width: 300px;
-    padding: 20px;
-  }
-  </style>
-  
+  <style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 10px;
+  row-gap: 50px;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+}
+
+.fii-box {
+  border: 1px solid black; height: 175px; border-radius: 12px;
+}
+
+.space-between {
+  margin-top: 3em;
+}
+
+.figure-card {
+  width: 300px;
+  padding: 20px;
+}
+</style>
