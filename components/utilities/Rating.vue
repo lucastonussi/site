@@ -3,6 +3,9 @@
   <div class='rating'>
     <h1>Avalie o conteúdo:</h1>
   </div>
+
+  <div class='space-between'></div>
+
   <div class='emoji-button'>
     <button @click="enviar('disgusted')">☹️</button>
     <button @click="enviar('did_not_like')">🙁</button>
@@ -10,6 +13,7 @@
     <button @click="enviar('liked')">🙂</button>
     <button @click="enviar('really_liked')">😃</button>
   </div>
+
   <div class='emoji-subtitle'>
     <p>Péssimo Ruim Regular Bom Ótimo </p>
   </div>
@@ -40,7 +44,6 @@ text-align: center;
 }
 
 .emoji-button {
-  margin-top: 15px;
   text-align: center;
   font-size: 30px;
   letter-spacing: 74px;
