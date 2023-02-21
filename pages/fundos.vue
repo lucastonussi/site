@@ -17,7 +17,7 @@
   </div>
 </template>
 
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -74,9 +74,9 @@
       }
     }
   }
-  </script>
+</script>
 
-  <style scoped>
+<style scoped>
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -89,10 +89,6 @@
 
 .fii-box {
   border: 1px solid black; height: 175px; border-radius: 12px;
-}
-
-.space-between {
-  margin-top: 3em;
 }
 
 .figure-card {
