@@ -85,6 +85,6 @@
 
 .description {
   text-align: justify;
-  padding-bottom: 30px;
+  height:130px;
 }
 </style>
