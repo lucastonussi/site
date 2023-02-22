@@ -20,7 +20,6 @@ export default {
         { icon: 'bubble_chart', title: 'generals.toolbar.left.inspire', to: '/inspire' },
         { icon: 'favoriteairplanemode_active', title: 'generals.toolbar.left.marina', to: '/marina' },
         { icon: 'pets', title: 'generals.toolbar.left.adoptpet', to: '/adoptpet' },
-        { icon: 'favoriteairplanemode_active', title: 'generals.toolbar.left.componentereutilizavel', to: '/componentereutilizavel' },
         { icon: 'home_work', title: 'generals.toolbar.left.fundos', to: '/fundos' },
         { icon: 'colorizeshield', title: 'generals.toolbar.left.guilherme', to: '/guilherme' },
         { icon: 'baby_changing_station', title: 'generals.toolbar.left.babycarespot', to: '/babycarespot' },
