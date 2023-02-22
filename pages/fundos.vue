@@ -97,13 +97,8 @@ export default {
   border: 1px solid black; height: 220px; border-radius: 12px;
 }
 
-.space-between {
-  margin-top: 3em;
-}
-
 .figure-card {
   width: 300px;
   padding: 20px;
 }
 </style>
-  

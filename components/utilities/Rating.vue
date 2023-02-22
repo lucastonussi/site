@@ -3,9 +3,6 @@
   <div class='rating'>
     <h1>Avalie o conteúdo:</h1>
   </div>
-
-  <div class='space-between'></div>
-
   <div class='emoji-button'>
     <button @click="enviar('disgusted')">☹️</button>
     <button @click="enviar('did_not_like')">🙁</button>
@@ -13,7 +10,6 @@
     <button @click="enviar('liked')">🙂</button>
     <button @click="enviar('really_liked')">😃</button>
   </div>
-
   <div class='emoji-subtitle'>
     <p>Péssimo Ruim Regular Bom Ótimo </p>
   </div>
@@ -38,9 +34,9 @@ export default {
 
 <style scoped>
 .rating {
-margin-top: 15px;
-font-size: 20px;
-text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .emoji-button {
